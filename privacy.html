@@ -1,0 +1,501 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#0f172a">
+
+<title>سياسة الخصوصية - جروب عملاء البنوك المصرية</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+html,
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    min-height:100%;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+    font-family:Tahoma,Arial,sans-serif;
+}
+
+/* =========================
+   الإطار الرئيسي
+========================= */
+
+.screen{
+    width:calc(100% - 24px);
+    max-width:450px;
+    margin:12px auto;
+    background:#1e293b;
+    border:2px solid #ffd700;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.app{
+    padding:12px;
+}
+
+/* =========================
+   الأعلى
+========================= */
+
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:5px;
+}
+
+.logo{
+    width:50px;
+    height:50px;
+    object-fit:contain;
+}
+
+.lang{
+    background:#ffd700;
+    color:#000;
+    border:0;
+    border-radius:8px;
+    padding:6px 10px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+/* =========================
+   العنوان
+========================= */
+
+h1{
+    color:#ffd700;
+    text-align:center;
+    font-size:18px;
+    margin:3px 0;
+}
+
+.group{
+    text-align:center;
+    color:#fff;
+    font-size:13px;
+    margin-bottom:8px;
+}
+
+/* =========================
+   الأقسام
+========================= */
+
+.section{
+    background:#0f172a;
+    border:1px solid rgba(255,215,0,.6);
+    border-radius:8px;
+    padding:8px;
+    margin-bottom:6px;
+}
+
+h2{
+    color:#ffd700;
+    font-size:12px;
+    margin:0 0 3px;
+}
+
+p{
+    color:#e5e7eb;
+    font-size:9.5px;
+    line-height:1.5;
+    margin:0;
+}
+
+/* =========================
+   العودة
+========================= */
+
+.back{
+    display:block;
+    width:100%;
+    text-align:center;
+    text-decoration:none;
+    background:#ffd700;
+    color:#000;
+    border-radius:8px;
+    padding:9px;
+    margin-top:7px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+/* =========================
+   الفوتر
+========================= */
+
+.footer{
+    text-align:center;
+    border-top:1px solid #ffd700;
+    margin-top:7px;
+    padding-top:5px;
+    font-size:10px;
+    line-height:1.45;
+    color:#ffd700;
+}
+
+/* =========================
+   الموبايل
+========================= */
+
+@media(max-width:360px){
+
+    .app{
+        padding:10px;
+    }
+
+    h1{
+        font-size:17px;
+    }
+
+    .group{
+        font-size:12px;
+    }
+
+    h2{
+        font-size:11px;
+    }
+
+    p{
+        font-size:9px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="screen">
+
+<div class="app">
+
+    <div class="top">
+
+        <button
+            class="lang"
+            id="langBtn"
+            onclick="toggleLang()"
+        >
+            English
+        </button>
+
+        <img
+            src="logo.png"
+            class="logo"
+            alt="Logo"
+        >
+
+    </div>
+
+
+    <h1 id="title">
+        سياسة الخصوصية
+    </h1>
+
+
+    <div
+        class="group"
+        id="group"
+    >
+        جروب عملاء البنوك المصرية
+    </div>
+
+
+    <div class="section">
+
+        <h2 id="dataTitle">
+            البيانات التي تتعامل معها الأداة
+        </h2>
+
+        <p id="dataText">
+            حاسبة أذون الخزانة لا تطلب إنشاء حساب ولا تطلب إدخال اسم أو رقم هاتف أو بريد إلكتروني لاستخدام العمليات الحسابية الأساسية.
+        </p>
+
+    </div>
+
+
+    <div class="section">
+
+        <h2 id="localTitle">
+            التخزين على الجهاز
+        </h2>
+
+        <p id="localText">
+            عند استخدام خاصية حفظ العملية، يتم حفظ العمليات الحسابية على جهاز المستخدم من خلال التخزين المحلي للمتصفح، ولا يتم إرسال هذه العمليات إلى خادم تابع للأداة.
+        </p>
+
+    </div>
+
+
+    <div class="section">
+
+        <h2 id="adsTitle">
+            الإعلانات
+        </h2>
+
+        <p id="adsText">
+            قد يتم عرض إعلانات داخل التطبيق أو الموقع من خلال خدمات إعلانية تابعة لجهات خارجية. وقد تستخدم هذه الجهات تقنيات مثل ملفات تعريف الارتباط أو التقنيات المشابهة وفقًا لسياساتها الخاصة.
+        </p>
+
+    </div>
+
+
+    <div class="section">
+
+        <h2 id="securityTitle">
+            حماية المعلومات
+        </h2>
+
+        <p id="securityText">
+            يتم تصميم الأداة بحيث تتم العمليات الحسابية على جهاز المستخدم. ومع ذلك، لا يمكن ضمان الحماية المطلقة لأي خدمة أو جهاز متصل بالإنترنت.
+        </p>
+
+    </div>
+
+
+    <div class="section">
+
+        <h2 id="changesTitle">
+            تحديث سياسة الخصوصية
+        </h2>
+
+        <p id="changesText">
+            قد يتم تحديث هذه السياسة من وقت لآخر بما يتناسب مع تطوير الأداة أو أي تغييرات في الخدمات المستخدمة.
+        </p>
+
+    </div>
+
+
+    <div class="section">
+
+        <h2 id="contactTitle">
+            التواصل
+        </h2>
+
+        <p id="contactText">
+            يمكن الرجوع إلى الجهة المالكة للأداة من خلال القنوات الرسمية المرتبطة بها عند الحاجة إلى الاستفسار عن سياسة الخصوصية.
+        </p>
+
+    </div>
+
+
+    <a
+        href="./index.html"
+        class="back"
+        id="back"
+    >
+        ← العودة إلى الحاسبة
+    </a>
+
+
+    <div class="footer">
+
+        <span id="footerGroup">
+            جروب عملاء البنوك المصرية
+        </span>
+
+        <br>
+
+        <span id="developer">
+            أ/ طارق متولي
+        </span>
+
+    </div>
+
+</div>
+
+</div>
+
+
+<script>
+
+let isArabic=true;
+
+
+/* =========================
+   اللغة
+========================= */
+
+function toggleLang(){
+
+    isArabic=!isArabic;
+
+
+    document.documentElement.lang=
+        isArabic
+        ? "ar"
+        : "en";
+
+
+    document.documentElement.dir=
+        isArabic
+        ? "rtl"
+        : "ltr";
+
+
+    document.getElementById(
+        "langBtn"
+    ).textContent=
+        isArabic
+        ? "English"
+        : "العربية";
+
+
+    document.getElementById(
+        "title"
+    ).textContent=
+        isArabic
+        ? "سياسة الخصوصية"
+        : "Privacy Policy";
+
+
+    document.getElementById(
+        "group"
+    ).textContent=
+        isArabic
+        ? "جروب عملاء البنوك المصرية"
+        : "Egyptian Bank Clients Group";
+
+
+    document.getElementById(
+        "footerGroup"
+    ).textContent=
+        isArabic
+        ? "جروب عملاء البنوك المصرية"
+        : "Egyptian Bank Clients Group";
+
+
+    document.getElementById(
+        "developer"
+    ).textContent=
+        isArabic
+        ? "أ/ طارق متولي"
+        : "Tarek Metwally";
+
+
+    document.getElementById(
+        "dataTitle"
+    ).textContent=
+        isArabic
+        ? "البيانات التي تتعامل معها الأداة"
+        : "Data Used by the Tool";
+
+
+    document.getElementById(
+        "dataText"
+    ).textContent=
+        isArabic
+        ? "حاسبة أذون الخزانة لا تطلب إنشاء حساب ولا تطلب إدخال اسم أو رقم هاتف أو بريد إلكتروني لاستخدام العمليات الحسابية الأساسية."
+        : "The Treasury Bills Calculator does not require an account, name, phone number or email address for basic calculations.";
+
+
+    document.getElementById(
+        "localTitle"
+    ).textContent=
+        isArabic
+        ? "التخزين على الجهاز"
+        : "Local Storage";
+
+
+    document.getElementById(
+        "localText"
+    ).textContent=
+        isArabic
+        ? "عند استخدام خاصية حفظ العملية، يتم حفظ العمليات الحسابية على جهاز المستخدم من خلال التخزين المحلي للمتصفح، ولا يتم إرسال هذه العمليات إلى خادم تابع للأداة."
+        : "When the save operation feature is used, calculations are stored locally on the user's device through browser storage and are not sent to a server operated by the tool.";
+
+
+    document.getElementById(
+        "adsTitle"
+    ).textContent=
+        isArabic
+        ? "الإعلانات"
+        : "Advertising";
+
+
+    document.getElementById(
+        "adsText"
+    ).textContent=
+        isArabic
+        ? "قد يتم عرض إعلانات داخل التطبيق أو الموقع من خلال خدمات إعلانية تابعة لجهات خارجية. وقد تستخدم هذه الجهات تقنيات مثل ملفات تعريف الارتباط أو التقنيات المشابهة وفقًا لسياساتها الخاصة."
+        : "Advertisements may be displayed through third-party advertising services. These services may use cookies or similar technologies according to their own policies.";
+
+
+    document.getElementById(
+        "securityTitle"
+    ).textContent=
+        isArabic
+        ? "حماية المعلومات"
+        : "Information Security";
+
+
+    document.getElementById(
+        "securityText"
+    ).textContent=
+        isArabic
+        ? "يتم تصميم الأداة بحيث تتم العمليات الحسابية على جهاز المستخدم. ومع ذلك، لا يمكن ضمان الحماية المطلقة لأي خدمة أو جهاز متصل بالإنترنت."
+        : "The tool is designed so that calculations are performed on the user's device. However, absolute security cannot be guaranteed for any service or internet-connected device.";
+
+
+    document.getElementById(
+        "changesTitle"
+    ).textContent=
+        isArabic
+        ? "تحديث سياسة الخصوصية"
+        : "Privacy Policy Updates";
+
+
+    document.getElementById(
+        "changesText"
+    ).textContent=
+        isArabic
+        ? "قد يتم تحديث هذه السياسة من وقت لآخر بما يتناسب مع تطوير الأداة أو أي تغييرات في الخدمات المستخدمة."
+        : "This policy may be updated from time to time to reflect changes to the tool or the services used.";
+
+
+    document.getElementById(
+        "contactTitle"
+    ).textContent=
+        isArabic
+        ? "التواصل"
+        : "Contact";
+
+
+    document.getElementById(
+        "contactText"
+    ).textContent=
+        isArabic
+        ? "يمكن الرجوع إلى الجهة المالكة للأداة من خلال القنوات الرسمية المرتبطة بها عند الحاجة إلى الاستفسار عن سياسة الخصوصية."
+        : "For privacy-related questions, users may contact the owner of the tool through its official associated channels.";
+
+
+    document.getElementById(
+        "back"
+    ).textContent=
+        isArabic
+        ? "← العودة إلى الحاسبة"
+        : "← Back to Calculator";
+
+}
+
+</script>
+
+</body>
+</html>
